@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root{font-family:'DM Sans',sans-serif;color:#514b59;background:#fbf8f4;font-synthesis:none;text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;--ink:#514b59;--muted:#867e8a;--rose:#d889a4;--plum:#796586;--green:#78977e;--cream:#fbf8f4;--line:#eae3e4;--shadow:0 18px 48px #69536b12}
+*{box-sizing:border-box}body{margin:0;min-width:320px;background:radial-gradient(ellipse at 10% 5%,#f9e8eb 0,transparent 27rem),radial-gradient(ellipse at 90% 35%,#e9f0e6 0,transparent 32rem),var(--cream)}button,input,textarea,select{font:inherit}button{cursor:pointer}#app{min-height:100vh;display:flex;flex-direction:column}
+.encabezado{display:flex;align-items:center;justify-content:space-between;padding:18px max(24px,calc((100vw - 1120px)/2));background:#fff9f5c9;border-bottom:1px solid #eadfe1;backdrop-filter:blur(14px)}.marca{display:flex;align-items:center;gap:12px;color:var(--ink);font-family:'Playfair Display',serif;font-size:20px;font-weight:600}.marca-icono{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:#f6e2e9;color:#a75f7b;font-size:22px}.lema{font-size:13px;color:var(--muted)}
+.contenedor{width:min(1080px,calc(100% - 40px));margin:0 auto;flex:1}.bienvenida{text-align:center;padding:56px 0 35px}.eyebrow{font-size:11px;letter-spacing:.19em;text-transform:uppercase;color:#9a758a;font-weight:700}.bienvenida h1{font:600 clamp(36px,6vw,58px)/1.12 'Playfair Display',serif;color:#5c4e60;margin:13px 0}.bienvenida p{color:var(--muted);margin:0;font-size:16px}.contenido{display:grid;grid-template-columns:minmax(290px,.85fr) 1.35fr;gap:32px;align-items:start}.panel{border:1px solid #eadfe1;background:#fffdfb;border-radius:24px;box-shadow:var(--shadow)}.formulario-seccion{padding:27px}.seccion-titulo{font:600 23px 'Playfair Display',serif;color:#5c4e60;margin:0 0 7px}.seccion-descripcion{font-size:13px;color:var(--muted);margin:0 0 22px}.campo{margin:0 0 14px}.campo label{display:block;font-size:12px;font-weight:700;color:#716778;margin-bottom:6px}.campo input,.campo textarea,.campo select,.filtros select{width:100%;border:1px solid #e8dfe2;border-radius:11px;background:#fff;padding:11px 12px;color:var(--ink);outline:0;transition:border-color .2s,box-shadow .2s}.campo textarea{resize:vertical;min-height:96px}.campo input:focus,.campo textarea:focus,.campo select:focus,.filtros select:focus{border-color:#c78ba2;box-shadow:0 0 0 3px #f3e5eb}.color-field{display:flex;gap:10px}.color-field select{flex:1}.color-preview{width:43px;height:43px;border-radius:12px;border:1px solid #00000010}.boton-principal{width:100%;border:0;border-radius:12px;padding:12px 16px;background:#876d8f;color:#fff;font-weight:700;box-shadow:0 7px 18px #876d8f35;transition:transform .2s,background .2s}.boton-principal:hover{transform:translateY(-2px);background:#755b7e}.boton-secundario{width:100%;border:1px solid #eadfe1;border-radius:12px;background:#fff;padding:10px;color:var(--muted);margin-top:9px}.oculto{display:none!important}.mensaje{min-height:20px;margin:12px 0 0;font-size:13px;color:#63816a}.mensaje.error{color:#ad5a67}
+.jardin-seccion{padding:7px 0}.jardin-cabecera{display:flex;align-items:end;justify-content:space-between;gap:14px;margin:10px 0 20px}.jardin-cabecera h2{font:600 27px 'Playfair Display',serif;color:#5c4e60;margin:0}.jardin-cabecera p{color:var(--muted);font-size:13px;margin:5px 0 0}.filtros select{width:auto;min-width:165px;padding:9px 30px 9px 11px}.lista-recuerdos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.tarjeta-recuerdo{position:relative;overflow:hidden;padding:19px;border-radius:20px;border:1px solid #eadfe1;background:#fffdfb;box-shadow:0 10px 28px #69536b0d;animation:aparecer .45s ease both;transition:transform .22s,box-shadow .22s}.tarjeta-recuerdo:hover{transform:translateY(-4px);box-shadow:0 17px 36px #69536b18}.tarjeta-recuerdo::before{content:'';position:absolute;inset:0 0 auto;height:4px;background:var(--flower)}.flor{float:right;display:grid;place-items:center;width:47px;height:47px;border-radius:50%;background:color-mix(in srgb,var(--flower),white 82%);color:var(--flower);font-size:27px}.tarjeta-recuerdo h3{font:600 19px 'Playfair Display',serif;color:#5d5061;margin:4px 0 9px;padding-right:44px;overflow-wrap:anywhere}.tarjeta-recuerdo>p{font-size:13px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere;margin:0 0 14px;color:#77707c}.meta{display:flex;flex-wrap:wrap;gap:7px}.etiqueta{padding:5px 9px;border-radius:30px;background:#f5eef1;color:#806c7b;font-size:11px}.acciones{display:flex;justify-content:flex-end;gap:7px;margin-top:14px}.acciones button{border:1px solid #e9e1e3;background:#fff;border-radius:9px;padding:7px 10px;color:#74687a;font-size:12px;transition:background .2s}.acciones button:hover{background:#f7edf1}.acciones .eliminar:hover{color:#ad5a67;background:#fff0f0}.vacio{grid-column:1/-1;text-align:center;padding:50px 20px;border:1px dashed #ddcbd4;border-radius:20px;color:#89808c;line-height:1.8}.vacio strong{display:block;font:500 20px 'Playfair Display',serif;color:#6d5d72}.pie{text-align:center;color:#938894;font-size:12px;padding:30px 20px;margin-top:42px}
+@keyframes aparecer{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}@media(max-width:760px){.encabezado{padding:14px 20px}.lema{display:none}.contenedor{width:min(100% - 28px,540px)}.bienvenida{padding:40px 0 26px}.contenido{grid-template-columns:1fr;gap:30px}.jardin-cabecera{align-items:start;flex-direction:column}.filtros,.filtros select{width:100%}.lista-recuerdos{grid-template-columns:1fr}.formulario-seccion{padding:22px}.pie{margin-top:26px}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Second visual pass: richer garden colors and more expressive flowers. */
+:root{--rose:#e4a0b7;--plum:#806b9c;--green:#78977e;--yellow:#e9c96f;--coral:#db806f;--lavender:#f1eafa;--sage:#e8f0e6;--shadow:0 20px 52px #51425f1a}
+body{background:radial-gradient(ellipse at 7% 9%,#f8dfe8 0,transparent 28rem),radial-gradient(ellipse at 89% 18%,#e9ddf6 0,transparent 31rem),radial-gradient(ellipse at 82% 78%,#f8edcf 0,transparent 27rem),radial-gradient(ellipse at 12% 78%,#dfece0 0,transparent 31rem),#faf7f1}
+.encabezado{background:linear-gradient(100deg,#fff9f4e8,#f4edf9e8 55%,#edf4e9e8);border-bottom-color:#e5d9e6}
+.marca-icono{background:linear-gradient(145deg,#f9dfe9,#e8ddf4);color:#936b91;box-shadow:0 5px 14px #946f9120}
+.bienvenida{position:relative;isolation:isolate}
+.bienvenida::before,.bienvenida::after{position:absolute;z-index:-1;color:#dfa4b7aa;content:"\273F";font-size:27px;animation:flotar 5s ease-in-out infinite}
+.bienvenida::before{top:55px;left:10%;transform:rotate(-18deg)}
+.bienvenida::after{right:12%;bottom:50px;color:#b9a6d4aa;font-size:20px;animation-delay:-2.5s}
+.eyebrow{display:inline-block;padding:7px 13px;border:1px solid #ead8e6;border-radius:30px;background:#fffaf5b8;color:#8c688e}
+.bienvenida h1{background:linear-gradient(100deg,#9d637f,#77678f 54%,#718d72);-webkit-background-clip:text;background-clip:text;color:transparent}
+.contenido{gap:28px}
+.formulario-seccion{border-color:#e5d9e8;background:linear-gradient(155deg,#fffdfb 3%,#fbf7ff 58%,#fffaf3);box-shadow:0 18px 45px #705b7b15}
+.formulario-seccion::before{display:block;width:54px;height:4px;margin-bottom:18px;border-radius:8px;background:linear-gradient(90deg,var(--rose),#b49bce,var(--yellow))}
+.seccion-titulo,.jardin-cabecera h2{color:#62516c}
+.campo label{color:#70647d}
+.campo input,.campo textarea,.campo select,.filtros select{border-color:#e3d9e9;background:linear-gradient(135deg,#fff,#fcf9ff);box-shadow:0 2px 7px #77628709}
+.campo input:hover,.campo textarea:hover,.campo select:hover,.filtros select:hover{border-color:#cbb8dc}
+.campo input:focus,.campo textarea:focus,.campo select:focus,.filtros select:focus{border-color:#a88cbe;background:#fff;box-shadow:0 0 0 4px #eae0f4}
+.campo textarea{min-height:110px;line-height:1.55}
+.color-preview{border:2px solid #fff;box-shadow:0 0 0 1px #dcd1e2,0 4px 10px #55415c18}
+.boton-principal{position:relative;overflow:hidden;margin-top:3px;border-radius:14px;background:linear-gradient(105deg,#dc829d,#a77fac 56%,#83719f);box-shadow:0 9px 22px #9d6f9a40;font-size:15px;letter-spacing:.01em;padding:14px 18px}
+.boton-principal::after{position:absolute;top:-60%;left:-45%;width:30%;height:220%;background:#ffffff30;content:"";transform:rotate(25deg);transition:left .45s ease}
+.boton-principal:hover{background:linear-gradient(105deg,#cf708f,#9670a4 56%,#73608f);box-shadow:0 12px 27px #9d6f9a50;transform:translateY(-2px)}
+.boton-principal:hover::after{left:120%}
+.boton-secundario{background:#f7f1fa;border-color:#e5d9eb;color:#786984}
+.mensaje{padding:0 2px}
+.jardin-seccion{position:relative;isolation:isolate;overflow:hidden;padding:20px;border:1px solid #d9e4d7;border-radius:26px;background:linear-gradient(145deg,#eaf2e7d9,#f1ecf8e0 58%,#faf1dcce);box-shadow:inset 0 1px #ffffffba,0 17px 42px #57694a12}
+.jardin-seccion::before,.jardin-seccion::after{position:absolute;z-index:-1;color:#78977e20;content:"\2766";font-size:102px;line-height:1;pointer-events:none}
+.jardin-seccion::before{top:2px;right:-10px;transform:rotate(28deg)}
+.jardin-seccion::after{bottom:-35px;left:-23px;color:#d889a420;font-size:126px;transform:rotate(-28deg)}
+.jardin-cabecera{position:relative;align-items:center;margin:0 0 18px}
+.jardin-cabecera h2{font-size:29px}
+.jardin-cabecera p{color:#6f806f}
+.filtros select{border-color:#d8e1d5;background:#ffffffd9}
+.lista-recuerdos{position:relative;gap:14px}
+.tarjeta-recuerdo{border-color:color-mix(in srgb,var(--flower),#fff 66%);background:linear-gradient(145deg,#fffefa,#fff 65%,color-mix(in srgb,var(--flower),#fff 94%));box-shadow:0 8px 22px #53445d12;animation:florecer .58s cubic-bezier(.2,.8,.2,1) both}
+.tarjeta-recuerdo::before{height:5px;background:linear-gradient(90deg,var(--flower),color-mix(in srgb,var(--flower),#f1c96e 42%),#9bb79a)}
+.tarjeta-recuerdo:hover{transform:translateY(-5px) rotate(-.25deg);box-shadow:0 17px 31px #53445d20}
+.flor{width:49px;height:49px;border:1px solid color-mix(in srgb,var(--flower),#fff 55%);background:radial-gradient(circle at 35% 30%,#fff,var(--flower));box-shadow:0 5px 13px color-mix(in srgb,var(--flower),transparent 70%);color:#fff;font-size:0;transition:transform .3s}
+.flor::before{content:"\273F";font-size:31px;line-height:1;text-shadow:0 2px 4px #5b3c5328}
+.tarjeta-recuerdo[data-emocion="amor"] .flor::before{content:"\2740"}
+.tarjeta-recuerdo[data-emocion="gratitud"] .flor::before{content:"\273D"}
+.tarjeta-recuerdo[data-emocion="nostalgia"] .flor::before{content:"\2741"}
+.tarjeta-recuerdo[data-emocion="esperanza"] .flor::before{content:"\273E"}
+.tarjeta-recuerdo[data-emocion="felicidad"] .flor::before{content:"\273F"}
+.tarjeta-recuerdo:hover .flor{transform:rotate(12deg) scale(1.08)}
+.tarjeta-recuerdo h3{color:#5f5269}
+.tarjeta-recuerdo>p{color:#706c76}
+.etiqueta{border:1px solid color-mix(in srgb,var(--flower),#fff 74%);background:color-mix(in srgb,var(--flower),#fff 91%);color:#66586d}
+.tarjeta-recuerdo[data-emocion="felicidad"] .meta .etiqueta:last-child{border-color:#f0dfa6;background:#fbf3d7}
+.tarjeta-recuerdo[data-emocion="amor"] .meta .etiqueta:last-child{border-color:#f0c7d3;background:#fbedf1}
+.tarjeta-recuerdo[data-emocion="gratitud"] .meta .etiqueta:last-child{border-color:#cedfbd;background:#edf4e7}
+.tarjeta-recuerdo[data-emocion="nostalgia"] .meta .etiqueta:last-child{border-color:#dbd0ed;background:#f1edf8}
+.tarjeta-recuerdo[data-emocion="esperanza"] .meta .etiqueta:last-child{border-color:#c9e0df;background:#eaf4f2}
+.acciones button{border-color:#e6dce9;background:#faf7fc;color:#75627f;font-weight:600}
+.acciones button[data-accion="editar"]{background:#f1eafa;border-color:#e0d2ed;color:#755f8e}
+.acciones button[data-accion="editar"]:hover{background:#e8dcf4;border-color:#cbb4e0}
+.acciones .eliminar{background:#fff4f0;border-color:#f1d9d1;color:#ae6b61}
+.acciones .eliminar:hover{background:#ffe7e0;border-color:#e8bdb2;color:#9d5148}
+.vacio{position:relative;overflow:hidden;border:1px dashed #b9c9b4;background:linear-gradient(135deg,#ffffffae,#f6eff9c9 55%,#fff7e5c9);color:#71806f;padding:42px 22px}
+.vacio::before{display:block;margin:0 auto 12px;color:#cc91a6;content:"\273F";font-size:42px;line-height:1;animation:flotar 4s ease-in-out infinite}
+.vacio strong{color:#62576a;font-size:22px}
+.pie{color:#7f7484}
+@keyframes florecer{from{opacity:0;transform:translateY(14px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes flotar{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@media(max-width:760px){.bienvenida::before{top:35px;left:2%;font-size:19px}.bienvenida::after{right:3%;bottom:32px}.jardin-seccion{padding:16px;border-radius:22px}.jardin-cabecera h2{font-size:26px}.tarjeta-recuerdo{padding:17px}}
