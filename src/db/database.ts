@@ -5,7 +5,10 @@ const STORAGE_KEY = "jardin_recuerdos_db";
 let db: Database;
 
 export async function inicializarDB(): Promise<Database> {
-  const SQL = await initSqlJs({ locateFile: file => `${import.meta.env.BASE_URL}${file}` });
+  const assetBase = new URL(import.meta.env.BASE_URL, window.location.origin);
+  const SQL = await initSqlJs({
+    locateFile: file => new URL(file, assetBase).href
+  });
   const savedData = localStorage.getItem(STORAGE_KEY);
   if (savedData) {
     try {

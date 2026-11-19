@@ -51,7 +51,7 @@ El resultado se genera en `dist/`. El comando `build` ejecuta primero la comprob
 - `src/controllers/RecuerdoController.ts`: eventos, validaci&oacute;n, filtro y operaciones CRUD.
 - `src/db/database.ts`: inicializaci&oacute;n de SQL.js y persistencia de la base exportada.
 - `src/styles/styles.css`: estilos, animaciones y adaptaci&oacute;n a pantallas peque&ntilde;as.
-- `public/sql-wasm.wasm`: archivo WebAssembly que carga SQL.js en el navegador.
+- `public/sql-wasm-browser.wasm`: archivo WebAssembly que solicita la compilaci&oacute;n browser de SQL.js usada por Vite. `public/sql-wasm.wasm` se conserva para la compilaci&oacute;n est&aacute;ndar de SQL.js.
 
 ## Publicaci&oacute;n en GitHub y Vercel
 
@@ -61,7 +61,7 @@ Sube el repositorio a GitHub y luego imp&oacute;rtalo desde Vercel. Usa estos va
 - Build command: `npm run build`.
 - Output directory: `dist`.
 
-No se requiere servidor, SQLite nativo ni almacenamiento de archivos en Vercel. El archivo `public/sql-wasm.wasm` se publica como recurso est&aacute;tico.
+No se requiere servidor, SQLite nativo ni almacenamiento de archivos en Vercel. Los archivos `public/sql-wasm-browser.wasm` y `public/sql-wasm.wasm` se publican como recursos est&aacute;ticos.
 
 ## Persistencia y privacidad
 
